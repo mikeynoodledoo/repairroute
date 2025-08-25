@@ -36,20 +36,56 @@ export default function Welcome() {
                 </header>
                 <div className="flex w-full items-center justify-center opacity-100 transition-opacity duration-750 lg:grow starting:opacity-0">
                     <main className="flex w-full  flex-col-reverse lg:max-w-4xl lg:flex-row">
+                         {/* first box div*/}
                         <div className='m-5 border-2 rounded-xl border-gray-400 flex w-full flex-col items-center justify-center gap-4 p-6 lg:w-1/2 lg:items-start lg:justify-start lg:p-8'>
                             <span className="text-2xl dark:text-[#9f9f96]"> Lorem Ipsum Technologies </span>
                             <span className="text-6xl font-semibold dark:text-[#EDEDEC]">Repair Route</span>
                             <p className=" text-[#1b1b18] dark:text-[#EDEDEC]">
                                 A comprehensive solution for repair task management and task acquisition, leveraging web-based technologies for seamless integration and user experience.
                             </p>
-                            <a
-                                href= "https://www.google.com"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
-                            > Test Link </a>
                         </div>
 
+                        <div className='m-5 border-2 rounded-xl border-gray-400 flex w-full flex-col items-center justify-center gap-4 p-6 lg:w-1/2 lg:items-start lg:justify-start lg:p-8'>
+                            <span className="text-2xl dark:text-[#9f9f96]"> Debugging Links </span>
+                            <ul>    
+                                <li className='text-1xl dark:text-[#EDEDEC]'> 
+                                    <a
+                                        href= {route('login')}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                                    > Login Page </a>
+                                </li>
+                                <li className='text-1xl dark:text-[#EDEDEC]'> 
+                                    <a
+                                        href= {route('register')}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                                    > Register Page </a>
+                                </li>
+
+                                    <li className='text-1xl dark:text-[#EDEDEC]'> 
+                                    <a
+                                        href= {route('dashboard')}
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                                    > Task Master Homepage </a>
+                                </li>
+
+                                    <li className='text-1xl dark:text-[#EDEDEC]'> 
+                                    <a
+                                        href= "https://www.google.com"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="inline-block rounded-sm border border-[#19140035] px-5 py-1.5 text-sm leading-normal text-[#1b1b18] hover:border-[#1915014a] dark:border-[#3E3E3A] dark:text-[#EDEDEC] dark:hover:border-[#62605b]"
+                                    >   </a>
+                                </li>
+                                
+                            </ul>
+                        </div>
+                        {/* second box div*/}
                         <div className='m-2  border-2 rounded-xl border-gray-400 flex w-full flex-col items-center justify-center gap-4 p-6 lg:w-1/2 lg:items-start lg:justify-start lg:p-8'>
                             <ul>    
                                 <li className='text-1xl dark:text-[#EDEDEC]'> Centralized Task Dissemination </li>

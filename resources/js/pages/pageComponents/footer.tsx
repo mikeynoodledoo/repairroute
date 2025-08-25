@@ -1,7 +1,7 @@
 
 const Footer = () => {  
     return (
-        <footer className="bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] dark:text-[#EDEDEC] p-4 text-center">
+        <footer className="border-t-1 bg-[#FDFDFC] dark:bg-[#0a0a0a] text-[#1b1b18] dark:text-[#EDEDEC] p-4 text-center">
             <p className="text-sm">
                 &copy; {new Date().getFullYear()} Lorem Ipsum Technologies. All rights reserved.
             </p>
