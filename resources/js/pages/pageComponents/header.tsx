@@ -7,10 +7,10 @@ interface HeaderProps {
 const Header = ({authenticated = false, showNav = true} : HeaderProps) => {
     return (
         <>
-        {authenticated ? (
-            <header className=" text-white p-4">
-                <h1 className="text-3xl">RepairRoute</h1>
-                {showNav && 
+        <header className=" text-white p-4 pl-15 pr-15 text-[#1b1b18] dark:text-[#EDEDEC] flex items-center justify-between">
+            <h1 className="text-4xl font-bold">RepairRoute</h1>        
+            {authenticated ? (
+                showNav && 
                     <nav className="flex items-center justify-end gap-4">              
                         <ul className="flex space-x-4">
                             <li><a href="/" className="hover:underline">Home</a></li>
@@ -18,12 +18,8 @@ const Header = ({authenticated = false, showNav = true} : HeaderProps) => {
                             <li><a href="/contact" className="hover:underline">Contact</a></li>
                         </ul>
                     </nav>
-                }
-            </header>
-        ) : (
-            <header className=" text-white p-4">
-                <h1 className="text-3xl">RepairRoute</h1>
-                {showNav && 
+            ) : (            
+                showNav && 
                     <nav className="flex items-center justify-end gap-4">          
                         <ul className="flex space-x-4">
                             <li>
@@ -37,9 +33,8 @@ const Header = ({authenticated = false, showNav = true} : HeaderProps) => {
                                 > Register </Link></li>
                         </ul>
                     </nav>
-                }
-            </header>
-        )}
+            )}
+        </header>
         
         </>
     );
